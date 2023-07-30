@@ -1,0 +1,2 @@
+run --target rv32i -iss spike --test riscv_arithmetic_basic_test --testlist testlist.yaml --simulator pyflow --cov -o ABC
+cov --target rv32i --test riscv_arithmetic_basic_test --testlist testlist.yaml --simulator pyflow --dir ABC/spike_sim --lsf_cmd "bsub ....." -bz 5 --enable_visualization
